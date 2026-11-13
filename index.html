@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROCHELLES ✦ Streetwear & Dark Luxury</title>
+  <meta name="description" content="ROCHELLES — Marca independente de streetwear premium. Peças autênticas, caimento pesado e identidade autoral. Your Style. Your Rules." />
+  
+  <!-- Favicon Demonstrativo -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ffffff'>✦</text></svg>" />
+
+  <!-- Estilos Principais -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGAÇÃO SUPERIOR
+       ========================================================================== -->
+  <header id="main-header" class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Botão Menu Mobile -->
+      <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menu de navegação">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Logotipo ROCHELLES -->
+      <a href="#inicio" class="brand-logo" aria-label="ROCHELLES Página Inicial">
+        ROCHELLES <span class="brand-star">✦</span>
+      </a>
+
+      <!-- Menu de Navegação Desktop -->
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#colecao" class="nav-link">Coleção</a>
+        <a href="#editorial" class="nav-link">Editorial</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Ações: Sacola de Compras -->
+      <div class="nav-actions">
+        <button type="button" id="cart-toggle-btn" class="btn-icon-nav" aria-label="Abrir sacola de compras">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span id="cart-badge-count" class="cart-badge scale-0">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MENU MOBILE DRAWER
+       ========================================================================== -->
+  <div id="mobile-menu-drawer" class="mobile-menu-drawer -translate-x-full">
+    <div class="mobile-menu-header">
+      <span class="brand-logo">ROCHELLES ✦</span>
+      <button type="button" id="close-mobile-menu-btn" class="close-cart-btn" aria-label="Fechar menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="#inicio" class="mobile-nav-link">Início</a>
+      <a href="#colecao" class="mobile-nav-link">Coleção</a>
+      <a href="#editorial" class="mobile-nav-link">Editorial</a>
+      <a href="#sobre" class="mobile-nav-link">Sobre a Marca</a>
+      <a href="#contato" class="mobile-nav-link">Contato</a>
+    </nav>
+
+    <div style="margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border-subtle);">
+      <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 0.5rem;">DROP 01 // EDICÃO LIMITADA</p>
+      <p style="font-size: 0.75rem; color: var(--text-muted);">Protótipo de e-commerce acadêmico de streetwear.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (PÁGINA INICIAL)
+         ========================================================================== -->
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Conteúdo Textual Hero -->
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span class="hero-tag-pulse"></span>
+              DROP 01 — STREETWEAR ESSENTIALS
+            </div>
+
+            <h1 class="hero-title">
+              YOUR STYLE.
+              <span class="cursive-accent">Your Rules.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Mais que roupas, uma expressão de personalidade.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#colecao" class="btn-primary">
+                <span>EXPLORE A COLEÇÃO</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#editorial" class="btn-outline">
+                <span>VER LOOKBOOK</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Destaque Fotográfico Principal da Peça -->
+          <div class="hero-visual-card">
+            <div class="hero-visual-inner" onclick="openProductModal('hoodie-swag-baddie')" style="cursor: pointer;">
+              <img 
+                src="assets/images/products/hoodie-swag-baddie-full.png" 
+                alt="Moletom Streetwear Swag Baddie — Frente e Verso" 
+                class="hero-visual-img"
+              />
+              
+              <div class="hero-floating-badge">
+                <div>
+                  <div class="title">PEÇA EM DESTAQUE</div>
+                  <div class="caption">Moletom Heavyweight "Swag Baddie"</div>
+                </div>
+                <span style="font-size: 1.25rem; color: #fff;">✦</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MARQUEE TICKER TAPE
+         ========================================================================== -->
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-content">
+        <span>ROCHELLES</span> <span class="star">✦</span>
+        <span>YOUR STYLE. YOUR RULES.</span> <span class="star">✦</span>
+        <span>DROP 01 OUT NOW</span> <span class="star">✦</span>
+        <span>HEAVYWEIGHT PREMIUM COTTON</span> <span class="star">✦</span>
+        <span>DARK LUXURY STREETWEAR</span> <span class="star">✦</span>
+        <span>ROCHELLES</span> <span class="star">✦</span>
+        <span>YOUR STYLE. YOUR RULES.</span> <span class="star">✦</span>
+        <span>DROP 01 OUT NOW</span> <span class="star">✦</span>
+        <span>HEAVYWEIGHT PREMIUM COTTON</span> <span class="star">✦</span>
+        <span>DARK LUXURY STREETWEAR</span> <span class="star">✦</span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         SEÇÃO DE PRODUTOS: NEW COLLECTION
+         ========================================================================== -->
+    <section id="colecao" class="section-products">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-overline">Streetwear Autoral</span>
+          <h2 class="section-title">NEW COLLECTION</h2>
+          <p class="section-desc">
+            Peças confeccionadas em gramatura pesada com recortes modernos, silhueta boxy e estampas monocromáticas exclusivas. Passe o cursor para visualizar o verso de cada peça.
+          </p>
+        </div>
+
+        <!-- Filtros por Categoria -->
+        <div class="filter-tabs" role="tablist">
+          <button type="button" class="filter-btn active" data-category="todos" role="tab">Todos</button>
+          <button type="button" class="filter-btn" data-category="moletons" role="tab">Moletons</button>
+          <button type="button" class="filter-btn" data-category="camisetas" role="tab">Camisetas Boxy</button>
+        </div>
+
+        <!-- Grade Dinâmica de Produtos -->
+        <div id="products-grid" class="products-grid">
+          <!-- Os cards de produtos são renderizados dinamicamente via assets/js/app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE DESTAQUES / EDITORIAL (STYLE IS A STATEMENT)
+         ========================================================================== -->
+    <section id="editorial" class="section-editorial">
+      <div class="container">
+        <div class="editorial-grid">
+          
+          <div class="editorial-content">
+            <span class="editorial-tag">Campanha Editorial // 2026</span>
+            
+            <h2 class="editorial-quote">
+              STYLE IS A <br />
+              <span class="cursive">Statement.</span>
+            </h2>
+
+            <p class="editorial-text">
+              Acreditamos que o streetwear vai além da estética: é um manifesto visual de independência e individualidade. Cada peça do Drop 01 foi desenvolvida com foco milimétrico na proporção, no peso dos tecidos e na força gráfica das composições em preto e branco.
+            </p>
+
+            <div class="editorial-features">
+              <div>
+                <span class="feature-num">380g</span>
+                <span class="feature-label">Moletom Heavyweight</span>
+              </div>
+              <div>
+                <span class="feature-num">100%</span>
+                <span class="feature-label">Algodão Selecionado</span>
+              </div>
+              <div>
+                <span class="feature-num">BOXY</span>
+                <span class="feature-label">Caimento Streetwear</span>
+              </div>
+              <div>
+                <span class="feature-num">01/01</span>
+                <span class="feature-label">Identidade Exclusiva</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="editorial-imagery">
+            <div class="editorial-img-frame">
+              <img 
+                src="assets/images/products/catalog-tees-full.png" 
+                alt="Ensaio Editorial Catálogo Monocromático de Camisetas Urbanas ROCHELLES" 
+                class="editorial-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO SOBRE A MARCA: OUR IDENTITY
+         ========================================================================== -->
+    <section id="sobre" class="section-identity">
+      <div class="container">
+        
+        <div class="identity-header">
+          <span class="section-overline">Quem Somos</span>
+          <h2 class="section-title">OUR IDENTITY</h2>
+          <blockquote class="identity-manifesto">
+            "A ROCHELLES representa atitude, autenticidade e liberdade de expressão. Cada peça carrega uma identidade própria, criada para quem não tem medo de expressar seu estilo."
+          </blockquote>
+        </div>
+
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon">✦</div>
+            <h3 class="pillar-title">Atitude & Silhueta</h3>
+            <p class="pillar-desc">
+              Modelagens desconstruídas com ombros caídos e caimento boxy volumoso, inspiradas no streetwear internacional e na cultura urbana underground.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">✦</div>
+            <h3 class="pillar-title">Matéria-Prima Premium</h3>
+            <p class="pillar-desc">
+              Fios nobres de algodão de alta densidade e costuras duplamente reforçadas, projetadas para durar e manter a forma impecável em qualquer ocasião.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">✦</div>
+            <h3 class="pillar-title">Expressão Autêntica</h3>
+            <p class="pillar-desc">
+              Grafismos autorais, tipografia caligráfica marcante e mosaicos fotográficos que transformam cada peça de roupa em uma obra de arte usável.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO NEWSLETTER VIP
+         ========================================================================== -->
+    <section class="section-newsletter">
+      <div class="container">
+        <div class="newsletter-box">
+          <span class="section-overline">Acesso Antecipado</span>
+          <h3 class="section-title" style="font-size: 1.8rem;">ENTRE PARA O ROCHELLES CLUB</h3>
+          <p class="section-desc">
+            Receba notificações em primeira mão sobre os próximos lançamentos, drops exclusivos e novidades da marca.
+          </p>
+
+          <form id="newsletter-form" class="newsletter-form">
+            <input 
+              type="email" 
+              placeholder="Digite seu melhor e-mail..." 
+              required 
+              class="newsletter-input" 
+              aria-label="Seu endereço de e-mail"
+            />
+            <button type="submit" class="btn-primary" style="padding: 1.1rem 2rem;">
+              <span>INSCREVER-SE</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       RODAPÉ
+       ========================================================================== -->
+  <footer id="contato" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Coluna da Marca -->
+        <div>
+          <a href="#inicio" class="brand-logo" style="margin-bottom: 0.5rem; display: inline-block;">
+            ROCHELLES ✦
+          </a>
+          <p class="footer-brand-desc">
+            Streetwear autoral focado em alta qualidade, estética dark luxury e individualidade urbana. Peças criadas para quem vive a própria verdade.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-icon-nav" style="width: 36px; height: 36px;" aria-label="Instagram da ROCHELLES">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="btn-icon-nav" style="width: 36px; height: 36px;" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Navegação -->
+        <div>
+          <h4 class="footer-col-title">NAVEGAÇÃO</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="footer-link">Início</a></li>
+            <li><a href="#colecao" class="footer-link">Coleção New Drop</a></li>
+            <li><a href="#editorial" class="footer-link">Editorial da Marca</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre a ROCHELLES</a></li>
+            <li><a href="javascript:void(0)" id="open-size-guide-btn" class="footer-link">Guia de Tamanhos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna Atendimento & Info -->
+        <div>
+          <h4 class="footer-col-title">CONTATO & SUPORTE</h4>
+          <ul class="footer-links">
+            <li class="footer-link">São Paulo, SP — Brasil</li>
+            <li class="footer-link">contato@rochelles.com.br (Demo)</li>
+            <li class="footer-link">Segunda a Sexta, das 10h às 19h</li>
+            <li><a href="javascript:void(0)" id="open-privacy-btn" class="footer-link">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Direitos -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 ROCHELLES STREETWEAR. TODOS OS DIREITOS RESERVADOS.
+        </div>
+        <div style="color: var(--text-muted);">
+          Projeto demonstrativo de e-commerce acadêmico para portfólio de desenvolvimento web.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DE DETALHES DO PRODUTO (QUICK VIEW / FICHA TÉCNICA)
+       ========================================================================== -->
+  <div id="product-modal" class="modal-wrapper hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id="modal-backdrop" class="modal-backdrop"></div>
+    
+    <div class="modal-card">
+      <button type="button" id="close-modal-btn" class="close-modal-btn" aria-label="Fechar modal de produto">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content-grid">
+        
+        <!-- Galeria de Fotos com Alternância Frente/Costas -->
+        <div class="modal-gallery">
+          <div class="modal-main-img-box">
+            <img id="modal-main-img" src="" alt="Produto Selecionado" />
+          </div>
+
+          <div id="modal-thumbnails" class="modal-thumbnails">
+            <!-- Miniaturas renderizadas dinamicamente -->
+          </div>
+        </div>
+
+        <!-- Informações e Seleção de Compra -->
+        <div class="modal-details">
+          <span id="modal-category" class="modal-category">CATEGORIA</span>
+          <h2 id="modal-title" class="modal-title">Nome do Produto</h2>
+          
+          <div class="modal-price-row">
+            <span id="modal-price" class="modal-price">R$ 0,00</span>
+            <span id="modal-installments" class="modal-installments">3x de R$ 0,00 sem juros</span>
+          </div>
+
+          <p id="modal-desc" class="modal-desc">
+            Descrição detalhada do produto...
+          </p>
+
+          <div class="modal-specs-block">
+            <h4 class="modal-specs-title">ESPECIFICAÇÕES DE FABRICAÇÃO</h4>
+            <ul id="modal-specs-list" class="modal-specs-list">
+              <!-- Itens da ficha técnica -->
+            </ul>
+          </div>
+
+          <!-- Seleção de Tamanho -->
+          <div class="size-selection-block">
+            <div class="size-header-row">
+              <span class="size-label">ESCOLHA SEU TAMANHO:</span>
+            </div>
+            
+            <div id="modal-sizes-container" class="size-pills">
+              <!-- Botões P, M, G, GG -->
+            </div>
+            <div id="modal-size-error" class="size-error-msg hidden"></div>
+          </div>
+
+          <!-- Controle de Quantidade e Adição à Sacola -->
+          <div class="modal-actions-row">
+            <div class="modal-qty-control">
+              <button type="button" id="modal-qty-minus" class="modal-qty-btn" aria-label="Diminuir quantidade">−</button>
+              <input type="text" id="modal-qty-input" class="modal-qty-input" value="1" readonly />
+              <button type="button" id="modal-qty-plus" class="modal-qty-btn" aria-label="Aumentar quantidade">+</button>
+            </div>
+
+            <button type="button" id="modal-add-to-cart-btn" class="modal-add-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span>ADICIONAR À SACOLA</span>
+            </button>
+          </div>
+
+          <!-- Simulador de Frete Demonstrativo -->
+          <div class="shipping-calc-box">
+            <label for="shipping-cep-input" class="shipping-calc-label">SIMULAR FRETE E PRAZO (DEMO)</label>
+            <div class="shipping-calc-inputs">
+              <input 
+                type="text" 
+                id="shipping-cep-input" 
+                class="shipping-calc-input" 
+                placeholder="00000-000" 
+                maxlength="9" 
+              />
+              <button type="button" id="shipping-calc-btn" class="shipping-calc-btn">CALCULAR</button>
+            </div>
+            <div id="shipping-calc-result" class="shipping-calc-result hidden"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DRAWER LATERAL DA SACOLA DE COMPRAS
+       ========================================================================== -->
+  <div id="cart-drawer-wrapper" class="cart-drawer-wrapper">
+    <div id="cart-backdrop" class="cart-backdrop hidden"></div>
+
+    <aside id="cart-drawer" class="cart-drawer translate-x-full" aria-label="Sacola de compras">
+      
+      <div class="cart-header">
+        <h3 class="cart-title">SUA SACOLA</h3>
+        <button type="button" id="close-cart-btn" class="close-cart-btn" aria-label="Fechar sacola">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Barra de Progresso de Frete Grátis -->
+      <div class="shipping-meter">
+        <div id="shipping-text" class="shipping-text">
+          Faltam <strong>R$ 199,00</strong> para <strong>FRETE GRÁTIS</strong>
+        </div>
+        <div class="shipping-progress-track">
+          <div id="shipping-progress-bar" class="shipping-progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Lista de Itens Adicionados -->
+      <div id="cart-items-container" class="cart-items-container">
+        <!-- Renderizado dinamicamente via assets/js/cart.js & app.js -->
+      </div>
+
+      <!-- Estado Vazio da Sacola -->
+      <div id="cart-empty-state" class="cart-empty-state hidden">
+        <div class="cart-empty-icon">✦</div>
+        <h4 class="cart-empty-title">SUA SACOLA ESTÁ VAZIA</h4>
+        <p class="cart-empty-desc">
+          Você ainda não escolheu nenhuma peça da coleção ROCHELLES.
+        </p>
+        <a href="#colecao" onclick="document.getElementById('close-cart-btn').click();" class="btn-primary" style="padding: 0.85rem 1.75rem;">
+          <span>EXPLORAR PEÇAS</span>
+        </a>
+      </div>
+
+      <!-- Rodapé da Sacola com Subtotal e Checkout -->
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span class="cart-subtotal-label">SUBTOTAL:</span>
+          <span id="cart-subtotal" class="cart-subtotal-val">R$ 0,00</span>
+        </div>
+        <p class="cart-disclaimer">Frete calculado no próximo passo ou grátis acima de R$ 199.</p>
+
+        <button type="button" id="checkout-btn" class="checkout-btn">
+          <span>FINALIZAR PEDIDO (DEMO)</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE CHECKOUT DEMONSTRATIVO
+       ========================================================================== -->
+  <div id="checkout-modal" class="modal-wrapper hidden" role="dialog" aria-modal="true">
+    <div id="checkout-backdrop" class="modal-backdrop"></div>
+    
+    <div class="checkout-modal-card">
+      <div class="academic-badge">PROTÓTIPO DE PORTFÓLIO ACADÊMICO</div>
+      
+      <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">
+        DEMONSTRAÇÃO CONCLUÍDA
+      </h3>
+      
+      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+        Este e-commerce da marca <strong>ROCHELLES</strong> foi desenvolvido para apresentação acadêmica e composição de portfólio de desenvolvimento web front-end. Conforme os requisitos do projeto, <strong>nenhuma transação financeira real será processada</strong>.
+      </p>
+
+      <div style="font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-primary); font-weight: 700;">
+        RESUMO DO SEU PEDIDO SIMULADO:
+      </div>
+
+      <div id="checkout-summary-list" class="checkout-summary-box">
+        <!-- Resumo dos itens simulados -->
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); margin-bottom: 2rem;">
+        <span style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase;">Total do Pedido:</span>
+        <strong id="checkout-total" style="font-size: 1.35rem; color: #fff;">R$ 0,00</strong>
+      </div>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button type="button" id="checkout-confirm-btn" class="btn-primary" style="flex-grow: 1;">
+          <span>CONCLUIR SIMULAÇÃO & LIMPAR</span>
+        </button>
+        <button type="button" id="close-checkout-btn" class="btn-outline" style="flex-grow: 1;">
+          <span>CONTINUAR NAVEGANDO</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE GUIA DE TAMANHOS (TABELA DE MEDIDAS)
+       ========================================================================== -->
+  <div id="size-guide-modal" class="modal-wrapper hidden" role="dialog" aria-modal="true">
+    <div id="size-guide-backdrop" class="modal-backdrop"></div>
+    
+    <div class="modal-card" style="max-width: 650px; padding: 2.25rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 0.08em; text-transform: uppercase;">
+          TABELA DE MEDIDAS STREETWEAR
+        </h3>
+        <button type="button" id="close-size-guide-btn" class="close-cart-btn" aria-label="Fechar guia de medidas">
+          ✕
+        </button>
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Nossas peças possuem caimento <strong>Boxy Streetwear</strong> (mais largas e estruturadas). Medidas em centímetros (cm):
+      </p>
+
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.8125rem; text-align: left;">
+          <thead>
+            <tr style="border-bottom: 1px solid var(--border-subtle); color: var(--text-secondary);">
+              <th style="padding: 0.75rem 0.5rem;">TAMANHO</th>
+              <th style="padding: 0.75rem 0.5rem;">LARGURA (TÓRAX)</th>
+              <th style="padding: 0.75rem 0.5rem;">COMPRIMENTO</th>
+              <th style="padding: 0.75rem 0.5rem;">MANGA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">P</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">56 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">72 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">22 cm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">M</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">59 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">75 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">24 cm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+              <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">G</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">62 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">78 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">25 cm</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">GG</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">66 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">81 cm</td>
+              <td style="padding: 0.75rem 0.5rem; color: var(--text-secondary);">26 cm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE POLÍTICA DE PRIVACIDADE DEMONSTRATIVA
+       ========================================================================== -->
+  <div id="privacy-modal" class="modal-wrapper hidden" role="dialog" aria-modal="true">
+    <div id="privacy-backdrop" class="modal-backdrop"></div>
+    
+    <div class="modal-card" style="max-width: 620px; padding: 2.25rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 0.08em; text-transform: uppercase;">
+          POLÍTICA DE PRIVACIDADE (DEMO)
+        </h3>
+        <button type="button" id="close-privacy-btn" class="close-cart-btn" aria-label="Fechar modal de privacidade">
+          ✕
+        </button>
+      </div>
+
+      <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 1rem;">
+        <p>
+          Este website foi desenvolvido estritamente como protótipo acadêmico para compor o portfólio de desenvolvimento de interfaces modernas e responsivas.
+        </p>
+        <p>
+          Nenhum dado pessoal, financeiro ou sensível é coletado, armazenado ou compartilhado com terceiros. As preferências da sacola de compras são mantidas exclusivamente no armazenamento local (localStorage) do seu próprio navegador.
+        </p>
+        <p>
+          Todas as marcas e peças de vestuário exibidas fazem parte do conceito visual e educacional do projeto.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contêiner de Notificações Toast -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
